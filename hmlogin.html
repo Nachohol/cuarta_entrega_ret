@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--nesting, variables, import, BEM bloque contenedor header header__titulo header header__nav // productos productos__titulo   productos productos__texto productos__texto--italica (bloque elemento modificador)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HALLERTHAM - la mejor cerveza artesanal. Todavía no la probaste? Cerveza Rubia, Negra, Roja, IPA, APA. La mejor espuma y el mejor cuerpo. Lupulos seleccionados y malta con gran sabor. Birra en italiano y beer en inglés... Hallertham en argentino.">
+   <meta name="keywords" content="Cerveza, artesanal, birra, beer, Hallertham, cerveza artesanal, lupulo, malta, espuma, rubia, negra, roja, lata, porron, IPA, APA, harmburguesa">
+    <!--Se agregan 2 google-fonts. Una para texto y otra para titulos: estilos Merienda y Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>LOGIN - Cerveza Hallertham🍺</title>
+</head>
+<body class="padre">
+    <header id="top" class="hijo header">
+        <a href="index.html"><img src="Imagenes/LogoHallerthamgrande.png" width="175px" alt="logo grande" class="logo"></a>
+        <h2>LOGIN</h2>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienessomos.html">NOSOTROS</a></li>
+                <li><a href="cerveza.html">CERVEZA</a>
+                    <ul>
+                        <li><a href="rubia.html">RUBIA</a></li>
+                        <li><a href="roja.html">ROJA</a></li>
+                        <li><a href="negra.html">NEGRA</a></li>
+                        <li><a href="historia.html">HISTORIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="compras.html">COMPRAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hijo mainUno">
+        <br>
+        <h3>¿POR QUÉ ES IMPORTANTE LOGGEARSE?</h3>
+        <br>
+        <p>Si podes loggearte es porque ya pertenés a nuestro CLUB HALLERTHAM. Y eso qué tiene que ver? Claro, ya sos amigo de Hallertham. Y, si somos amigos, podemos disfrutar juntos!! Cómo? con los tantos beneficios: por ejemplo el famoso 3x2 en porrones o el 2x1 en latitas.</p>
+        <br>
+        <img src="Imagenes/15hpersona3.png" width="300px" alt="imagen publicitaria" class="imgCenter">
+        <br>
+        <br>
+    </main>
+    <div class="hijo mainDos">
+        <br>
+        <h3>SIEMPRE CON HALLERTHAM</h3>
+        <br>
+        <p>Arrancamos siendo pocos. Hoy somos más de 10.000!!! pero eso es muy poco!! no no, somos 10.000 solamente en General Rodriguez, la ciudad que nos vio nacer. En el país ya somos más de 150.000 Hallertham lovers! Por eso seguí sumando puntos, porque los que siempre nos bancaron tienen tantos beneficios que hoy toman birra casi gratis! </p>
+        <br>
+        <br>
+        <img src="Imagenes/14hpersona2.png" width="300px" alt="brindis" class="imgCenter">
+    </div>
+    <aside class="hijo aside">
+        <br>
+        <h3>LOGIN</h3>
+        <br>
+        <div> <!--form: usario -->
+            <label for="nombre">Escribe tu Usuario *</label>
+            <div class="input-group">
+                <span class="input-group-text">NOMBRE Y APELLIDO</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+            </div>
+            <br>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Club Hallertham" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+        </div>
+        <br>
+        <div> <!--form: password -->
+                <label for="Password">Escribe tu Contraseña *</label>
+                <input type="password" aria-label="password" class="form-control" placeholder="Contraseña" requiered>
+        </div>
+        <br>
+        <div> <!--form: botones-->
+            <button type="submit" class="btn btn-secondary">ACCEDER</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h3> ESTAMOS MUY CONTENTOS</h3>
+            <br>
+            <br>
+            <p> Tan contentos estamos que te puedas loggear que nos gustaría que participes de nuestros sorteos. Ingresá y te contamos cómo!!</p>
+            <br>
+            <br>
+            <br>
+            <img src="Imagenes/18hroja1.png" width="300px" class="imgCenter">
+            <br>
+        </div>
+    </aside>
+    <footer class="hijo footer">
+        <div>
+            <p class="pieDePagina">©Hallertham. Todos los derechos reservados. </p>
+            <p class="pieDePagina"> <strong>Beba con moderación.</strong> No compartir este contenido con menores.</p>
+        </div>
+        <div> 
+            <a href="http://www.instagram.com" target="_blank"><img src="Imagenes/logoig.jpg" width="25px" alt="es el logo de instagram"></a>
+            <a href="http://www.facebook.com" target="_blank"><img src="Imagenes/logofb.jpg" width="26px" alt="es el logo de facebook"></a>  
+            <a href="http://www.twitter.com" target="_blank"><img src="Imagenes/logotw.jpg" width="26px" alt="es el logo de twitter"></a>   
+            <a href="http://www.youtube.com" target="_blank"><img src="Imagenes/logoyt.jpg" width="24px" alt="es el logo de youtube"></a>
+        </div>
+        <br>
+        <div>
+            <a href="#top" class="pieDePagina">Ir Arriba</a>
+        </div>
+        <br>
+        <div>
+            <a href="PagesAside/consumoresp.html" class="pieDePagina">CONSUMO RESPONSABLE</a>
+            <a href="PagesAside/sac.html" class="pieDePagina">SAC</a>
+            <a href="PagesAside/revendedor.html" class="pieDePagina">SEA REVENDEDOR</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--bootstrap carrouse  dropdown-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+</body>
+</html>

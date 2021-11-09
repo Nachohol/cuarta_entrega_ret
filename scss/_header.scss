@@ -1,0 +1,127 @@
+/* navegador*/ 
+
+ul{
+    list-style: none;
+    padding: 1px;
+    margin: 1px;
+    background-color: $negrotransp;
+    font-size: 0;
+    li {
+        display:inline-block; 
+        block-size: max-content;
+        width: 20%;
+        position:relative;
+        font-size: 1rem;
+        color: $negrotransp;
+        justify-content:stretch;
+        padding: 5px;
+        margin: 5px;
+        ul {
+            position: absolute;
+            display: none;
+            li {
+                display: block;
+                background-color: none;
+                li:hover{
+                    color: $naranja;
+                    font-size: 1rem;
+                    background-color: none;
+                    
+                  }
+             }
+         }
+    }
+}
+ 
+ 
+   a {
+     text-decoration: none;
+     padding: 2px;
+     color: $blanco;
+     font-family: $font;
+     font-size: 1rem;
+   }
+ 
+a:hover{
+     color: $negro;
+     background-color: $naranja;
+   }
+ 
+   ul li:hover ul {
+      display: block;
+      background-color: $negro;
+   }
+
+
+/* navegador aside*/
+
+.menuAside{
+  font-family: $font;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  padding: 5px;
+}
+
+.menuAside a:hover{
+  text-decoration: none;
+  padding: 4px;
+  color: $negro;
+  font-family: $font;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+}
+
+
+/* ejemplo flex 1
+.menu{
+    background-color:$bg_azulado;
+    list-style-type: none;
+    padding:0;
+    width: 90%;
+    margin:20px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        padding:0.7rem;
+        margin:0.7rem;
+        a{
+            color: $bg_naranja;
+            text-decoration: none;
+            padding:20px;
+            &:hover{
+                background-color: #545554;
+                color:white;
+
+            */
+
+    /* ejemplo flex 2*/
+    /*.nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            .menu {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+                .elemento {
+                    padding: 20px;
+                    transition: all .3s ease;
+                    &:hover{
+                        background-color: $bordo;
+                        border-radius: 50%;
+                        }         
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        &:hover{
+                            text-decoration: underline;
+                            }
+                        }
+                        */

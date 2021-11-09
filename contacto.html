@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--nesting, variables, import, BEM bloque contenedor header header__titulo header header__nav // productos productos__titulo   productos productos__texto productos__texto--italica (bloque elemento modificador)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HALLERTHAM - la mejor cerveza artesanal. Todavía no la probaste? Cerveza Rubia, Negra, Roja, IPA, APA. La mejor espuma y el mejor cuerpo. Lupulos seleccionados y malta con gran sabor. Birra en italiano y beer en inglés... Hallertham en argentino.">
+   <meta name="keywords" content="Cerveza, artesanal, birra, beer, Hallertham, cerveza artesanal, lupulo, malta, espuma, rubia, negra, roja, lata, porron, IPA, APA, harmburguesa">
+    <!--Se agregan 2 google-fonts. Una para texto y otra para titulos: estilos Merienda y Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>CONTACTO - Cerveza Hallertham 🍺</title>
+</head>
+<body class="padre">
+    <header id="top" class="hijo header">
+        <a href="index.html"><img src="Imagenes/LogoHallerthamgrande.png" width="175px" alt="logo grande" class="logo"></a>
+        <h2>CONTACTO</h2>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienessomos.html">NOSOTROS</a></li>
+                <li><a href="cerveza.html">CERVEZA</a>
+                    <ul>
+                        <li><a href="rubia.html">RUBIA</a></li>
+                        <li><a href="roja.html">ROJA</a></li>
+                        <li><a href="negra.html">NEGRA</a></li>
+                        <li><a href="historia.html">HISTORIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="compras.html">COMPRAS</a></li>
+                <li><a href="hmlogin.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hijo mainUno">
+        <!--SECCION FORMULARIO: inicio-->
+        <br>
+        <section>
+            <form action="">
+                <fieldset> <!--contorno formulario-->
+                    <legend class="acordeon1">Formulario de contacto</legend>
+                    <br>
+                    <br>
+                    <div> <!--form: nombre -->
+                        <label for="nombre">Escribe tu nombre *</label>
+                        <input type="text" name="nombre" placeholder="Nombre" requiered> 
+                    </div>
+                    <br>
+                    <div> <!--form: apellido -->
+                        <label for="Apellido">Escribe tu Apellido *</label>
+                        <input type="text" name="Apellido" placeholder="Apellido" requiered>
+                    </div>
+                    <br>
+                    <div> <!--form: e-mail-->
+                        <label for="mail">Escribe tu Mail *</label>
+                        <input type="email" name="Email" placeholder="e-mail" rquiered>
+                    </div>
+                    <br>
+                    <div> <!--form: password -->
+                    <label for="Password">Escribe tu Contraseña *</label>
+                        <input type="password" name="password" placeholder="Contraseña" requiered>
+                    </div>
+                    <br>
+                    <div> <!--form: Nacionalidad-->
+                        <label for="Pais">Escribe tu Nacionalidad</label>
+                        <select name="Pais">
+                            <option value= "arg">ARGENTINA</option>
+                            <option value= "uru">URUGUAY</option>
+                            <option value= "chi">CHILE</option>
+                            <option value= "par">PARAGUAY</option>
+                            <option value= "bra">BRASIL</option>
+                            <option value= "bol">BOLIVIA</option>
+                            <option value= "otr">OTRO</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div> <!--form: género-->
+                        <div>
+                        <label for="Genero">-Elige tu género-</label>
+                        </div>
+                        <br>
+                        <div class="genero"> Hombre 
+                        <input  type="radio" name="Genero" value="Hombre"></div>
+                        <div class="genero">Mujer 
+                        <input  type="radio" name="Genero" value="Mujer"></div>
+                        <div class="genero">Otro
+                        <input  type="radio" name="Genero" value="Otro"></div>
+                    </div>
+                    <br>
+                    <div> <!--form: fecha de nacimiento-->
+                        <label for="nac">Fecha de Nacimiento</label>
+                        <input type="date" name="nac" requiered>
+                    </div>
+                    <br>
+                    <div> <!--form: Consulta-->
+                        <label for="comentario">Deje su Consulta</label><br>
+                        <textarea name="comentario" id="" cols="50" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div> <!--form: términos y condiciones-->
+                        <label for="terminos">Acepto términos y condiciones</label>
+                        <input type="checkbox" name="terminos" requiered>
+                    </div>
+                    <br>
+                    <div> <!--form: botones-->
+                        <button type="submit" class="btn btn-secondary">ENVIAR</button>
+                        <button type="reset" class="btn btn-secondary">BORRAR</button>
+                        <button type="submit" class="btn btn-secondary">OTRO</button> <!--botón para Javascript-->
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <!--SECCION FORMULARIO Fin-->
+    </main>
+    <div class="hijo mainDos">
+        <br>
+        <h3>CLUB HALLERTHAM</h3>
+        <br>
+        <label for="customRange1" class="form-label">¿CUÁNTO ME GUSTA HALLERTHAM?</label>
+        <p class="aceptabilidad">Por favor seleccioná el nivel de agrado que tienes con nuestras cervezas</p>
+        <input type="range" class="form-range" id="customRange1">
+        <br>
+        <br>
+        <p>Queremos conocer el por qué de tu elección. Nos sirve para seguir mejorando.</p>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Dejanos tu opinión" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">COMENTARIOS</label>
+        </div>
+        <br>
+        <br>
+        <h3>TU RESPUESTA SERÁ ENVIADA</h3>
+        <br>
+        <p>"Desconfío de los formularios" nos dijo el otro día mi abuela Mirta. Le preguntamos por qué abuela? "y por qué anda a saber quién los recibe? vos te crees que los leen?". Para que no pienses como mi abuela Mirta te contamos que una vez que te suscribas te llegará un mail con la respuesta. </p>
+    </div>
+    </div>
+    <aside class="hijo aside">
+        <br>
+        <div>
+            <h3>TODO LO QUE NECESITÁS</h3>
+        </div>
+        <br>
+        <div class="menuAside">
+            <a href="PagesAside/newsletter.html">NEWSLETTER</a>
+            <a href="PagesAside/futbol.html">FUTBOL</a>
+            <a href="PagesAside/centroayuda.html">AYUDA</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            <img src="Imagenes/4cervezatrigo.png" width="250px" alt="imagen publicitaria" class="imgCenter">
+            <br>
+            <img src="Imagenes/2brindis.png" width="250px" alt="imagen publicitaria" class="imgCenter">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h3>ESTAMOS PROCESANDO</h3>
+            <br>
+            <p>Tampoco somos tan rápidos. Tenemos como les dijimos muchísimos suscriptores y todos quieren tener una respuesta personalizada. Danos 72 hs y te llegará nuestra respuesta.</p>
+        </div>
+        <div>
+            <img src="Imagenes/8hbrindis2.png" width="300px" class="imgCenter">
+        </div>
+    </aside>
+    <footer class="hijo footer">
+        <div>
+            <p class="pieDePagina">©Hallertham. Todos los derechos reservados. </p>
+            <p class="pieDePagina"> <strong>Beba con moderación.</strong> No compartir este contenido con menores.</p>
+        </div>
+        <div> 
+            <a href="http://www.instagram.com" target="_blank"><img src="Imagenes/logoig.jpg" width="25px" alt="es el logo de instagram"></a>
+            <a href="http://www.facebook.com" target="_blank"><img src="Imagenes/logofb.jpg" width="26px" alt="es el logo de facebook"></a>  
+            <a href="http://www.twitter.com" target="_blank"><img src="Imagenes/logotw.jpg" width="26px" alt="es el logo de twitter"></a>   
+            <a href="http://www.youtube.com" target="_blank"><img src="Imagenes/logoyt.jpg" width="24px" alt="es el logo de youtube"></a>
+        </div>
+        <br>
+        <div>
+            <a href="#top" class="pieDePagina">Ir Arriba</a>
+        </div>
+        <br>
+        <div>
+            <a href="PagesAside/consumoresp.html" class="pieDePagina">CONSUMO RESPONSABLE</a>
+            <a href="PagesAside/sac.html" class="pieDePagina">SAC</a>
+            <a href="PagesAside/revendedor.html" class="pieDePagina">SEA REVENDEDOR</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--bootstrap carrouse  dropdown-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+</body>
+</html>

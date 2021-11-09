@@ -1,0 +1,84 @@
+/* index.html --> links de más info*/
+
+@mixin base-text {
+    color: $blanco;
+    font-family: $font
+  }
+
+
+.centradoInfo{
+    text-align: center;
+    font-style: normal;
+  }
+  
+   .infoUno{
+     color: $blanco;
+     font-size: 17px;
+     background-color: none;
+     text-align-last: right;
+     
+   }
+  
+   .infoDos{
+    font-size: 17px;
+    color: $blanco;
+    background-color: none;
+    text-align: end;
+  }
+
+  /* contacto.html --> formulario*/ /*Botones y labels*/
+
+label{
+    @include base-text;
+    text-align: center;
+  }
+  
+  legend{
+    @include base-text;
+    text-align: center;
+  }
+  
+  .genero{
+    @include base-text;
+  }
+  
+  .boot{
+    color: $negro;
+  }
+  
+  .boot2{
+    color: $blanco;
+  }
+  
+/* historia.html --> bootstrap*/
+
+  .collapse{
+      color: $blanco;
+      .despliega{
+          color: $blanco;
+      }
+    }
+
+    .modal-title{
+        color: $negro;
+    }
+
+    .acordeon{
+        color: $negro;
+    }
+
+.boot2{
+  color: $blanco;
+}
+
+.aceptabilidad{
+  text-align: left;
+}
+
+.acordeon{
+  color: $negro;
+}
+
+.acordeon1{
+  color: $naranja
+}

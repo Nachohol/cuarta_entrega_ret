@@ -1,0 +1,50 @@
+.padre{
+    padding: 0px;
+    margin: 0px;
+    height: 360px;
+    max-width:fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+    grid-template-areas: 
+        "header"
+        "mainUno"
+        "mainDos"
+        "aside"
+        "footer"
+        ;
+    gap: 0px;
+}
+
+.hijo{
+    border: solid $negro 2px;
+}
+.header{
+    background-color: $negrotransp;
+    background-image: url(../Imagenes/fondonuevo3.jpg);
+    grid-area: header;
+}
+.mainUno {
+    background-color: $negrotransp;
+    grid-area: mainUno;
+    padding: 3px;
+    margin: 3px;
+}
+.mainDos{
+    background-color: $negrotransp;
+    grid-area: mainDos;
+    padding: 3px;
+    margin: 3px;
+}
+.aside{
+    background-color: $negrotransp;
+    grid-area: aside;
+    padding: 3px;
+    margin: 3px;
+}
+
+.footer{
+    background-color: $negrotransp;
+    background-image: url(../Imagenes/fondonuevo3.jpg);
+    grid-area: footer;
+}

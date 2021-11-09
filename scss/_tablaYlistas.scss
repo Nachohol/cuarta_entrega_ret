@@ -1,0 +1,26 @@
+/* cerveza.html - tabla*/
+
+table {
+    margin: auto;
+    border: 4px solid;
+  }
+  
+  th {
+    background-color: $naranja;
+    border: 3px solid;
+    padding: 5px;
+    color: $negro;
+   }
+  
+   tr, td {
+    background-color: $gris;
+    border: 3px solid;
+    text-align: center;
+    color: $blanco;
+    font-size: 12px;
+   }
+  
+   .definicion{
+    color: $blanco;
+    font-size: 15px;
+   }

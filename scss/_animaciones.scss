@@ -1,0 +1,33 @@
+.aparecer{
+    margin:10px;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+  }
+
+  .scale:hover{
+    transform:scale(1.2, 1.2)
+  }
+  
+  .tran1{
+    transition: all 2s ease;
+  }
+  .tran1:hover{
+    width: 250px;
+  }
+  
+  .gradiente{
+    background: linear-gradient(to left, black, rgb(78, 78, 97), rgb(66, 63, 63), rgb(60, 60, 70), black);
+  }

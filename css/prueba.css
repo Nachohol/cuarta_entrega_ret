@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/*https://www.colorhunt.co/palette/000000323232ff1e56ffac41
+#000000 negro
+#323232 gris
+#FF1E56 rojo
+#FFAC41 amarillo
+*/
+/*letras*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../Imagenes/fondonuevo3.jpg);
+  font-family: "Rubik", sans-serif; }
+
+/* titulos y parrafos*/
+h1 {
+  font-family: "Rubik", sans-serif;
+  color: #FFAC41;
+  text-align: center;
+  font-size: 50px;
+  padding: 3px;
+  margin: 5px; }
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: #FFAC41;
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+  margin: 5px; }
+
+p {
+  color: #EBEEF2;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  text-align: center; }
+
+h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif;
+  color: #FFAC41;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px; }
+
+.padre {
+  padding: 0px;
+  margin: 0px;
+  height: 360px;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+  grid-template-areas: "header" "mainUno" "mainDos" "aside" "footer";
+  gap: 0px; }
+
+.hijo {
+  border: solid #000000 2px; }
+
+.header {
+  background-color: #323232de;
+  background-image: url(../Imagenes/fondonuevo3.jpg);
+  grid-area: header; }
+
+.mainUno {
+  background-color: #323232de;
+  grid-area: mainUno;
+  padding: 3px;
+  margin: 3px; }
+
+.mainDos {
+  background-color: #323232de;
+  grid-area: mainDos;
+  padding: 3px;
+  margin: 3px; }
+
+.aside {
+  background-color: #323232de;
+  grid-area: aside;
+  padding: 3px;
+  margin: 3px; }
+
+.footer {
+  background-color: #323232de;
+  background-image: url(../Imagenes/fondonuevo3.jpg);
+  grid-area: footer; }
+
+.aparecer {
+  margin: 10px;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.scale:hover {
+  transform: scale(1.2, 1.2); }
+
+.tran1 {
+  transition: all 2s ease; }
+
+.tran1:hover {
+  width: 250px; }
+
+.gradiente {
+  background: linear-gradient(to left, black, #4e4e61, #423f3f, #3c3c46, black); }
+
+/* navegador*/
+ul {
+  list-style: none;
+  padding: 1px;
+  margin: 1px;
+  background-color: #323232de;
+  font-size: 0; }
+  ul li {
+    display: inline-block;
+    block-size: max-content;
+    width: 20%;
+    position: relative;
+    font-size: 1rem;
+    color: #323232de;
+    justify-content: stretch;
+    padding: 5px;
+    margin: 5px; }
+    ul li ul {
+      position: absolute;
+      display: none; }
+      ul li ul li {
+        display: block;
+        background-color: none; }
+        ul li ul li li:hover {
+          color: #FFAC41;
+          font-size: 1rem;
+          background-color: none; }
+
+a {
+  text-decoration: none;
+  padding: 2px;
+  color: #EBEEF2;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem; }
+
+a:hover {
+  color: #000000;
+  background-color: #FFAC41; }
+
+ul li:hover ul {
+  display: block;
+  background-color: #000000; }
+
+/* navegador aside*/
+.menuAside {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  padding: 5px; }
+
+.menuAside a:hover {
+  text-decoration: none;
+  padding: 4px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center; }
+
+/* ejemplo flex 1
+.menu{
+    background-color:$bg_azulado;
+    list-style-type: none;
+    padding:0;
+    width: 90%;
+    margin:20px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        padding:0.7rem;
+        margin:0.7rem;
+        a{
+            color: $bg_naranja;
+            text-decoration: none;
+            padding:20px;
+            &:hover{
+                background-color: #545554;
+                color:white;
+
+            */
+/* ejemplo flex 2*/
+/*.nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            .menu {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+                .elemento {
+                    padding: 20px;
+                    transition: all .3s ease;
+                    &:hover{
+                        background-color: $bordo;
+                        border-radius: 50%;
+                        }         
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        &:hover{
+                            text-decoration: underline;
+                            }
+                        }
+                        */
+.imgCenter {
+  margin: auto;
+  display: flex; }
+
+/* LOGO */
+.logo {
+  margin: 3px auto 3px;
+  display: block; }
+
+/* cerveza.html - tabla*/
+table {
+  margin: auto;
+  border: 4px solid; }
+
+th {
+  background-color: #FFAC41;
+  border: 3px solid;
+  padding: 5px;
+  color: #000000; }
+
+tr, td {
+  background-color: #323232;
+  border: 3px solid;
+  text-align: center;
+  color: #EBEEF2;
+  font-size: 12px; }
+
+.definicion {
+  color: #EBEEF2;
+  font-size: 15px; }
+
+/* index.html --> links de más info*/
+.centradoInfo {
+  text-align: center;
+  font-style: normal; }
+
+.infoUno {
+  color: #EBEEF2;
+  font-size: 17px;
+  background-color: none;
+  text-align-last: right; }
+
+.infoDos {
+  font-size: 17px;
+  color: #EBEEF2;
+  background-color: none;
+  text-align: end; }
+
+/* contacto.html --> formulario*/
+/*Botones y labels*/
+label {
+  color: #EBEEF2;
+  font-family: "Rubik", sans-serif;
+  text-align: center; }
+
+legend {
+  color: #EBEEF2;
+  font-family: "Rubik", sans-serif;
+  text-align: center; }
+
+.genero {
+  color: #EBEEF2;
+  font-family: "Rubik", sans-serif; }
+
+.boot {
+  color: #000000; }
+
+.boot2 {
+  color: #EBEEF2; }
+
+/* historia.html --> bootstrap*/
+.collapse {
+  color: #EBEEF2; }
+  .collapse .despliega {
+    color: #EBEEF2; }
+
+.modal-title {
+  color: #000000; }
+
+.acordeon {
+  color: #000000; }
+
+.boot2 {
+  color: #EBEEF2; }
+
+.aceptabilidad {
+  text-align: left; }
+
+.acordeon {
+  color: #000000; }
+
+.acordeon1 {
+  color: #FFAC41; }
+
+footer {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  color: #EBEEF2;
+  text-align: center; }
+  footer .pieDePagina {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    color: #EBEEF2;
+    font-style: normal;
+    text-align: center;
+    line-height: 3; }
+
+/* RESPONSIVE Mobile first*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    color: #FFAC41; }
+  .padre {
+    padding: 0px;
+    margin: 0px;
+    height: 250px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+    grid-template-areas: "header" "mainUno" "mainDos" "aside" "footer";
+    gap: 0px; }
+  ul {
+    list-style: none;
+    padding: 1px;
+    margin: 0.5px;
+    background-color: #323232de;
+    font-size: 0; }
+    ul li {
+      display: inline-block;
+      width: 14%;
+      position: relative;
+      font-size: 0.7rem;
+      color: #323232de; }
+      ul li ul {
+        position: absolute;
+        display: none; }
+        ul li ul li {
+          display: block;
+          background-color: none; }
+          ul li ul li li:hover {
+            color: #FFAC41;
+            font-size: 0.7rem;
+            background-color: none; } }
+
+a {
+  text-decoration: none;
+  padding: 1px;
+  color: #EBEEF2;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.7rem; }
+
+a:hover {
+  color: #000000;
+  background-color: #FFAC41; }
+
+ul li:hover ul {
+  display: block;
+  background-color: #000000; }
+
+@media (min-width: 768px) {
+  .padre {
+    padding: 1px;
+    margin: 3px;
+    max-width: fit-content;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: "header header" "mainUno mainUno" "mainDos aside" "footer footer";
+    gap: 0px; }
+  ul {
+    list-style: none;
+    padding: 2px;
+    margin: 5px;
+    background-color: #323232de;
+    font-size: 0; }
+    ul li {
+      display: inline-block;
+      width: 14%;
+      position: relative;
+      font-size: 0.9rem;
+      color: #323232de; }
+      ul li ul {
+        position: absolute;
+        display: none; }
+        ul li ul li {
+          display: block;
+          background-color: none; }
+          ul li ul li li:hover {
+            color: #FFAC41;
+            font-size: 0.9rem;
+            background-color: none; }
+  a {
+    text-decoration: none;
+    padding: 1px;
+    color: #EBEEF2;
+    font-family: "Rubik", sans-serif;
+    font-size: 0.9rem; }
+  a:hover {
+    color: #000000;
+    background-color: #FFAC41; }
+  ul li:hover ul {
+    display: block;
+    background-color: #000000; }
+  h1 {
+    color: #FFAC41; } }
+
+@media only screen and (min-width: 1024px) {
+  .padre {
+    padding: 2px;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: "header header header" "mainUno mainUno aside" "mainDos mainDos aside" "footer footer footer";
+    gap: 1px; }
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: #323232de;
+    font-size: 0; }
+    ul li {
+      display: inline-block;
+      width: 14%;
+      position: relative;
+      font-size: 1rem;
+      color: #323232de; }
+      ul li ul {
+        position: absolute;
+        display: none; }
+        ul li ul li {
+          display: block;
+          background-color: none; }
+          ul li ul li li:hover {
+            color: #FFAC41;
+            font-size: 1rem;
+            background-color: none; }
+  a {
+    text-decoration: none;
+    padding: 1px;
+    color: #EBEEF2;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem; }
+  a:hover {
+    color: #000000;
+    background-color: #FFAC41; }
+  ul li:hover ul {
+    display: block;
+    background-color: #000000; }
+  h1 {
+    color: #FFAC41;
+    font-weight: bolder; }
+  .pClub {
+    font-display: transparent; } }
