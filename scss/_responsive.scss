@@ -8,7 +8,7 @@
       padding: 0px;
       margin: 0px;
       height: 250px;
-      max-width:fit-content;
+      width: 360px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
@@ -22,17 +22,42 @@
       gap: 0px;
   }
 
+  .hijo{
+    width: 360px;
+}
+.header{
+  width: 360px;
+}
+.mainUno {
+  width: 360px;
+  .celularcito{
+    width: 345px;
+    height: auto;
+  }
+}
+
+.mainDos{
+   width: 360px;
+}
+.aside{
+   width: 360px;
+}
+
+.footer{
+    width: 360px;
+}
+
     ul{
       list-style: none;
-      padding: 1px;
-      margin: 0.5px;
+      padding: 0.7px;
+      margin: 0.4px;
       background-color: $negrotransp;
       font-size: 0;
       li {
           display:inline-block; 
-          width: 14%;
+          width: 13%;
           position:relative;
-          font-size: 0.7rem;
+          font-size: 0.65rem;
           color: $negrotransp;
           ul {
               position: absolute;
@@ -42,7 +67,7 @@
                   background-color: none;
                   li:hover{
                       color: $naranja;
-                      font-size: 0.7rem;
+                      font-size: 0.65rem;
                       background-color: none;
                       
                     }
@@ -58,7 +83,7 @@
     padding: 1px;
     color: $blanco;
     font-family: $font;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
 a:hover{
@@ -71,12 +96,25 @@ a:hover{
      background-color: $negro;
   }
 
+  h1{
+    font-size: 37px;
+}
+
+  h2{
+    font-size: 20px;
+}
+
+
+  p{
+    font-size: 14px;
+}
+
   
   @media (min-width: 768px){
       .padre{
         padding: 1px;
         margin: 3px;
-        max-width:fit-content;
+        width: 767px;
         height: 360px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -90,6 +128,27 @@ a:hover{
         gap: 0px;
     }
 
+    .hijo{
+      width: 767px;
+  }
+  .header{
+    width: 767px;
+  }
+  .mainUno {
+    width: 767px;
+  }
+  .mainDos{
+     width: 382px;
+  }
+  .aside{
+     width: 382px;
+  }
+  
+  .footer{
+      width: 767px;
+  }
+  
+
     ul{
       list-style: none;
       padding: 2px;
@@ -98,9 +157,9 @@ a:hover{
       font-size: 0;
       li {
           display:inline-block; 
-          width: 14%;
+          width: 15%;
           position:relative;
-          font-size: 0.9rem;
+          font-size: 1rem;
           color: $negrotransp;
           ul {
               position: absolute;
@@ -110,7 +169,7 @@ a:hover{
                   background-color: none;
                   li:hover{
                       color: $naranja;
-                      font-size: 0.9rem;
+                      font-size: 1rem;
                       background-color: none;
                       
                     }
@@ -124,7 +183,7 @@ a:hover{
     padding: 1px;
     color: $blanco;
     font-family: $font;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
 a:hover{
@@ -137,19 +196,17 @@ a:hover{
      background-color: $negro;
   }
 
-    h1{
-      color: $naranja;
-    }
   }
+
 
 
   
   @media only screen and (min-width: 1024px){
       .padre{
-        padding: 2px;
-        margin: 5px;
+        padding: 1px;
+        margin: 3px;
         width: 100%;
-        height: 300px;
+        height: 600px;
         display: grid;
         grid-template-columns: 1.5fr 1.5fr 1fr;
         grid-template-rows: 1fr 2fr 2fr 1fr;
@@ -162,15 +219,36 @@ a:hover{
         gap: 1px;
     }
 
+    .hijo{
+      width: 100%;
+  }
+  .header{
+    width: 100%;
+  }
+  .mainUno {
+    width: 100%;
+  }
+  
+  .mainDos{
+     width: 100%;
+  }
+  .aside{
+     width: 100%;
+  }
+  
+  .footer{
+      width: 100%;
+  }
+
     ul{
       list-style: none;
-      padding: 10px;
-      margin: 5px;
+      padding: 6px;
+      margin: 2px;
       background-color: $negrotransp;
       font-size: 0;
       li {
           display:inline-block; 
-          width: 14%;
+          width: 15%;
           position:relative;
           font-size: 1rem;
           color: $negrotransp;

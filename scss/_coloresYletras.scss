@@ -11,7 +11,21 @@ $rojo:#FF1E56;
 $naranja:#FFAC41;
 $negro:#000000;
 $negrotransp:#323232de;
+$pCerveza: white;
 
 /*letras*/
 $font:'Rubik', sans-serif;
 
+/*CONDICIONALES*/
+$pCerveza: rubiaP; 
+p {
+      @if $pCerveza == rubiaP{
+             color: white;
+      } @else if $pCerveza == rojaP {
+                 color: rgba(240, 151, 151, 0.664);
+     } @else if $pCerveza == negraP {
+                color: rgb(159, 159, 219);
+     } @else {
+                color: rgb(131, 132, 133);
+      }
+}

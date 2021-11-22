@@ -1,11 +1,8 @@
 @charset "UTF-8";
-/*https://www.colorhunt.co/palette/000000323232ff1e56ffac41
-#000000 negro
-#323232 gris
-#FF1E56 rojo
-#FFAC41 amarillo
-*/
-/*letras*/
+
+p {
+  color: white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -45,11 +42,20 @@ h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 20px; }
 
+.rubiaP {
+  color: rubiaP; }
+
+.rojaP {
+  color: rojaP; }
+
+.negraP {
+  color: negraP; }
+
 .padre {
   padding: 0px;
   margin: 0px;
   height: 360px;
-  max-width: fit-content;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
@@ -173,56 +179,6 @@ ul li:hover ul {
   font-style: normal;
   text-align: center; }
 
-/* ejemplo flex 1
-.menu{
-    background-color:$bg_azulado;
-    list-style-type: none;
-    padding:0;
-    width: 90%;
-    margin:20px auto;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    li{
-        padding:0.7rem;
-        margin:0.7rem;
-        a{
-            color: $bg_naranja;
-            text-decoration: none;
-            padding:20px;
-            &:hover{
-                background-color: #545554;
-                color:white;
-
-            */
-/* ejemplo flex 2*/
-/*.nav{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            
-            .menu {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-                .elemento {
-                    padding: 20px;
-                    transition: all .3s ease;
-                    &:hover{
-                        background-color: $bordo;
-                        border-radius: 50%;
-                        }         
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        &:hover{
-                            text-decoration: underline;
-                            }
-                        }
-                        */
 .imgCenter {
   margin: auto;
   display: flex; }
@@ -338,23 +294,38 @@ footer {
     padding: 0px;
     margin: 0px;
     height: 250px;
-    max-width: fit-content;
+    width: 360px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
     grid-template-areas: "header" "mainUno" "mainDos" "aside" "footer";
     gap: 0px; }
+  .hijo {
+    width: 360px; }
+  .header {
+    width: 360px; }
+  .mainUno {
+    width: 360px; }
+    .mainUno .celularcito {
+      width: 345px;
+      height: auto; }
+  .mainDos {
+    width: 360px; }
+  .aside {
+    width: 360px; }
+  .footer {
+    width: 360px; }
   ul {
     list-style: none;
-    padding: 1px;
-    margin: 0.5px;
+    padding: 0.7px;
+    margin: 0.4px;
     background-color: #323232de;
     font-size: 0; }
     ul li {
       display: inline-block;
-      width: 14%;
+      width: 13%;
       position: relative;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       color: #323232de; }
       ul li ul {
         position: absolute;
@@ -364,7 +335,7 @@ footer {
           background-color: none; }
           ul li ul li li:hover {
             color: #FFAC41;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             background-color: none; } }
 
 a {
@@ -372,7 +343,7 @@ a {
   padding: 1px;
   color: #EBEEF2;
   font-family: "Rubik", sans-serif;
-  font-size: 0.7rem; }
+  font-size: 0.65rem; }
 
 a:hover {
   color: #000000;
@@ -382,17 +353,38 @@ ul li:hover ul {
   display: block;
   background-color: #000000; }
 
+h1 {
+  font-size: 37px; }
+
+h2 {
+  font-size: 20px; }
+
+p {
+  font-size: 14px; }
+
 @media (min-width: 768px) {
   .padre {
     padding: 1px;
     margin: 3px;
-    max-width: fit-content;
+    width: 767px;
     height: 360px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-areas: "header header" "mainUno mainUno" "mainDos aside" "footer footer";
     gap: 0px; }
+  .hijo {
+    width: 767px; }
+  .header {
+    width: 767px; }
+  .mainUno {
+    width: 767px; }
+  .mainDos {
+    width: 382px; }
+  .aside {
+    width: 382px; }
+  .footer {
+    width: 767px; }
   ul {
     list-style: none;
     padding: 2px;
@@ -401,9 +393,9 @@ ul li:hover ul {
     font-size: 0; }
     ul li {
       display: inline-block;
-      width: 14%;
+      width: 15%;
       position: relative;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #323232de; }
       ul li ul {
         position: absolute;
@@ -413,43 +405,53 @@ ul li:hover ul {
           background-color: none; }
           ul li ul li li:hover {
             color: #FFAC41;
-            font-size: 0.9rem;
+            font-size: 1rem;
             background-color: none; }
   a {
     text-decoration: none;
     padding: 1px;
     color: #EBEEF2;
     font-family: "Rubik", sans-serif;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   a:hover {
     color: #000000;
     background-color: #FFAC41; }
   ul li:hover ul {
     display: block;
-    background-color: #000000; }
-  h1 {
-    color: #FFAC41; } }
+    background-color: #000000; } }
 
 @media only screen and (min-width: 1024px) {
   .padre {
-    padding: 2px;
-    margin: 5px;
+    padding: 1px;
+    margin: 3px;
     width: 100%;
-    height: 300px;
+    height: 600px;
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;
     grid-template-areas: "header header header" "mainUno mainUno aside" "mainDos mainDos aside" "footer footer footer";
     gap: 1px; }
+  .hijo {
+    width: 100%; }
+  .header {
+    width: 100%; }
+  .mainUno {
+    width: 100%; }
+  .mainDos {
+    width: 100%; }
+  .aside {
+    width: 100%; }
+  .footer {
+    width: 100%; }
   ul {
     list-style: none;
-    padding: 10px;
-    margin: 5px;
+    padding: 6px;
+    margin: 2px;
     background-color: #323232de;
     font-size: 0; }
     ul li {
       display: inline-block;
-      width: 14%;
+      width: 15%;
       position: relative;
       font-size: 1rem;
       color: #323232de; }
